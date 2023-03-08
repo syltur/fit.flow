@@ -64,7 +64,7 @@ body, html{
   }
 }
 #div3 {
-  background-image: url(/images/background3.svg);
+  background-image: url(/images/bg3.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: -220px;
@@ -139,7 +139,37 @@ body, html{
     }
   }
 }
+#div5 {
+  background-image: url(/images/background4.svg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+ .vertical {
+    border-left: 6px solid $first-color;
+    top: 300px;
+    height: 800px;
+    position:absolute;
+    left: 50%;
+    .circle-small {
+      left: -28px;
+      position: absolute;
+      background: $first-color;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+  }
+  .circle {
+    left: -28px;
+    position: absolute;
+    background: $first-color;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
 
+  }
+}
 
 // mobile-menu 
 @media screen and (max-width: 768px){
@@ -229,3 +259,4 @@ body, html{
     height: var(--size);
    }
  }
+ 
