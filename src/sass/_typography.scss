@@ -1,0 +1,171 @@
+
+h1 {
+  color: $third-color;
+  text-align: center;
+  font-family: 'Coiny';
+}
+h2 {
+  color: $second-color;
+  font-family: 'Coiny';
+}
+.header {
+  margin: 0 15% 0 15%;
+  font-size: 40px;
+  font-family: 'Coiny';
+  color: $fourth-color;
+  text-align: center;
+  span {
+    color: $second-color;
+  }
+}
+.header2 {
+  margin-top: 0;
+  font-size: 30px;
+  font-family: 'Coiny';
+  color: $first-color;
+  text-align: center;
+}
+p {
+  font-size: 20px;
+  font-family: 'Oswald';
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.h-me {
+  font-size: 45px;
+  font-family: 'Coiny';
+  color: $third-color;
+  padding-right: 25%;
+}
+.main-header {
+  font-size: 60px;
+}
+.brand-name p{
+  font-family: 'Titan One', cursive;
+  font-size: 40px;
+  color: $second-color;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.nav-link p{
+  color: rgba(247, 241, 241, 0.435);
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+.menu-effect {
+  text-transform: uppercase;
+  li {
+  display: inline-block;
+  list-style: outside none none;
+  margin-right: 15px;
+  padding: 0;
+    a {
+      padding: 0.5em 0;
+      color: rgba(248, 223, 237, 0.855);
+      position: relative;
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
+  }
+}
+
+.menu-effect * {
+  box-sizing: border-box;
+}
+//div 3
+//media screen for typo
+@media screen and (max-width: 768px) {
+  .header {
+    font-size: 25px;
+    margin: 0;
+  }
+}
+//menu-effect rest code
+@media screen and (min-width: 768px) {
+  
+  .menu-effect a:before,
+  .menu-effect a:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .menu-effect a:before {
+    bottom: 0;
+    display: block;
+    height: 3px;
+    width: 0%;
+    content: "";
+    background-color: $second-color;
+  }
+  .menu-effect a:after {
+    left: 0;
+    top: 0;
+    padding: 0.5em 0;
+    position: absolute;
+    content: attr(data-hover);
+    color: $third-color;
+    white-space: nowrap;
+    max-width: 0%;
+    overflow: hidden;
+  }
+  .menu-effect a:hover:before,
+  .menu-effect .current a:before {
+    opacity: 1;
+    width: 100%;
+  }
+  .menu-effect a:hover:after,
+  .menu-effect .current a:after {
+  max-width: 100%;
+  }
+  .nav-link:focus, .nav-link:hover {
+      color: $third-color !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+.main-header {
+font-size: 40px;
+width: 60%;
+}
+.menu-effect a:before,
+.menu-effect a:after {
+position: absolute;
+-webkit-transition: all 0.35s ease;
+transition: all 0.35s ease;
+}
+.menu-effect a:before {
+bottom: 0;
+display: block;
+height: 3px;
+width: 0%;
+content: "";
+background-color: $second-color;
+}
+.menu-effect a:after {
+left: 0;
+top: 0;
+padding: 0.5em 0;
+position: absolute;
+content: attr(data-hover);
+color: $third-color !important;
+white-space: nowrap;
+max-width: 0%;
+overflow: hidden;
+}
+.menu-effect a:hover:before,
+.menu-effect .current a:before {
+opacity: 1;
+width: 100%;
+}
+.menu-effect a:hover:after,
+.menu-effect .current a:after {
+max-width: 100%;
+}
+.nav-link:focus, .nav-link:hover {
+color: $third-color !important;
+}
+}

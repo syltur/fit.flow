@@ -1,0 +1,24 @@
+{
+    "plugins": [
+      "stylelint-scss"
+    ],
+    "rules": {
+      "indentation": null,
+      "block-no-empty": true,
+      "color-no-invalid-hex": true,
+      "declaration-colon-space-after": "always",
+      "declaration-block-semicolon-newline-after": "always",
+      "declaration-block-trailing-semicolon": "always",
+      "max-nesting-depth": [3, {
+        "ignore": ["pseudo-classes"]
+      }],
+      "rule-empty-line-before": [ "never", {
+        "except": ["first-nested"],
+        "ignore": ["after-comment"]
+      } ],
+      "unit-whitelist": null,
+      "scss/selector-no-redundant-nesting-selector": true,
+      "scss/no-duplicate-dollar-variables": true
+    }
+  }
+  
