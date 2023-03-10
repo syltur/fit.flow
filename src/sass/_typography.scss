@@ -10,7 +10,7 @@ h2 {
 }
 .header {
   margin: 0 15% 0 15%;
-  font-size: 40px;
+  font-size: 55px;
   font-family: 'Coiny';
   color: $fourth-color;
   text-align: center;
@@ -18,12 +18,20 @@ h2 {
     color: $second-color;
   }
 }
+.txt-1 {
+  text-transform: uppercase !important;
+}
 .header2 {
   margin-top: 0;
   font-size: 30px;
   font-family: 'Coiny';
   color: $first-color;
   text-align: center;
+}
+.num {
+  align-self: center;
+  font-size: 60px;
+  color: $third-color;
 }
 p {
   font-size: 20px;
@@ -79,7 +87,7 @@ p {
 @media screen and (max-width: 768px) {
   
   .header {
-    font-size: 25px;
+    font-size: 40px;
     margin: 0;
   }
 }
@@ -106,7 +114,6 @@ p {
     padding: 0.5em 0;
     position: absolute;
     content: attr(data-hover);
-    color: $third-color;
     white-space: nowrap;
     max-width: 0%;
     overflow: hidden;
@@ -119,9 +126,6 @@ p {
   .menu-effect a:hover:after,
   .menu-effect .current a:after {
   max-width: 100%;
-  }
-  .nav-link:focus, .nav-link:hover {
-      color: $third-color !important;
   }
 }
 
@@ -151,7 +155,6 @@ top: 0;
 padding: 0.5em 0;
 position: absolute;
 content: attr(data-hover);
-color: $third-color !important;
 white-space: nowrap;
 max-width: 0%;
 overflow: hidden;
@@ -164,8 +167,5 @@ width: 100%;
 .menu-effect a:hover:after,
 .menu-effect .current a:after {
 max-width: 100%;
-}
-.nav-link:focus, .nav-link:hover {
-color: $third-color !important;
 }
 }

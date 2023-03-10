@@ -8,6 +8,7 @@
       "ecmaVersion": 2015
     },
     "rules": {
+      "prefer-native-element": "off",
       "indent": ["error", 2],
       "linebreak-style": ["off"],
       "quotes": ["error", "single", { "allowTemplateLiterals": true }],
