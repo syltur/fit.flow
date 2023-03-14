@@ -226,6 +226,384 @@ body, html{
       top: 1600px;
     }
   }
+  div .row {
+    justify-content: center;
+    padding: 0 !important;
+  }
 #div6 {
-  height: 100vh;
+  background-image: url(../images/bg-reviews.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  /* Slider */
+  .carousel-inner, .carousel-item {
+    margin-top: 3%;
+    height: 600px;
+    width: 100%;
+  }
+  .carousel-caption {
+    width: 90%;
+    height: 70%;
+    left: 50%;
+    top: 32%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    padding: 20px;
+    column-gap: 15%;
+    p {
+      color: $third-color;
+      flex-grow: 1;
+      text-align: left;
+      font-style: italic;
+      letter-spacing: 1px;
+      font-size: 20px;
+    }
+    img {
+      flex-grow: 1;
+    }
+  }
+  .review-quote {
+    padding: 5%;
+    .quote1 {
+      padding: 10px;
+      float: left;
+    }
+    .quote2 {
+
+      float: right;
+    }
+  }
+}
+#div7 {
+  height: 100%;
+  width: 100%;
+  padding: 5% 0 5% 0;
+  .price-wrapper {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: space-between;
+    align-content: center;
+    column-gap: 20px;
+    row-gap: 20px;
+    .price-box1 {
+      padding: 2%;
+      flex-basis: 20%;
+      height: 150px;
+      border: 3px solid $first-color;
+      cursor: pointer;
+      span {
+        font-family: 'coiny';
+        font-size: 30px;
+      }
+      img {
+        padding-bottom: 10px;
+        padding-right: 5px;
+      }
+      &:hover {
+        border: 3px solid $second-color;
+        color: $second-color;
+        transition: all .25s;
+      }
+    }
+  
+    .price-box2 {
+      padding: 2%;
+      flex-basis: 41.35%;
+      height: 220px;
+      border: 3px solid $second-color;
+      cursor: pointer;
+      span {
+        font-family: 'coiny';
+        font-size: 30px;
+      }
+      img {
+        padding-bottom: 10px;
+        padding-right: 5px;
+      }
+      &:hover {
+        border: 3px solid $first-color;
+        color: $first-color;
+        transition: all .25s;
+      }
+    }
+    .price-box3-1 {
+      padding: 2%;
+      flex-basis: 41.35%;
+      height: 220px;
+      background-color: $first-color;
+      color: $third-color;
+      height: 130px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .price-box3-2 {
+      padding: 2%;
+      flex-basis: 41.35%;
+      height: 130px;
+      background-color: $second-color;
+      color: $third-color;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}
+#div8 {
+  height: 100%;
+  width: 100%;
+  padding: 5% 0 5% 0;
+  .about-me {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    justify-items: space-around;
+    align-items: center;
+    column-gap: 10%;
+    .sandra-img {
+      flex-basis: 20%;
+      i {
+        font-size: 15px;
+        letter-spacing: 1px;
+        color: $first-color;
+      }
+    }
+    .more-about-me {
+      flex-basis: 40%;
+      hr {
+        float: right;
+        width: 75%;
+        border: 1px solid black;
+        margin-bottom: 3px;
+      }
+      .btn-ab-me {
+        clear: both;
+        margin: 8%;
+      }
+    }
+  }
+}
+#div9 {
+  height: 100%;
+  width: 100%;
+  padding: 5% 0 5% 0;
+  background-image: url(../images/bg9.svg);
+  .contact {
+    height: 500px;
+    width: 60%;
+    background-color: $second-color;
+    margin: 0 auto;
+    padding: 5% 5% 2% 5%;
+    border-radius: 5%;
+    h4 {
+      color: $third-color;
+    }
+    p {
+      text-align: center;
+      text-transform: uppercase;
+      color: $third-color;
+    }
+    .page-wrap{
+      max-width: 75rem;
+      margin: 0 auto;
+    }
+    
+    h1 {
+      color: $third-color;
+      font-size: 1.5rem;
+      letter-spacing: -1px;
+      margin: 1.25rem 0;
+    }
+    
+    
+    %label-movement {
+      font-size: 0.75em;
+      color: $third-color;
+      top: -2.25rem;
+      transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+    }
+    
+    .styled-input {
+      float: left;
+      width: 30%;
+      margin-right: 3%;
+      margin-bottom: 3%;
+      position: relative;
+      label {
+        color: $first-color;
+        padding: 1rem;
+        position: absolute;
+        top: 0;    
+        left: 0;
+        transition: all 0.25s cubic-bezier(0.2, 0, 0.03, 1);
+        pointer-events: none;
+      }
+      &.wide {
+        width: 96%;
+      }
+    }
+    
+    input, textarea {
+      padding: 1rem 1rem;
+      border: 0; 
+      width: 100%;
+      font-size: 1rem;
+      ~ span {
+        display: block;
+        width: 0;
+        height: 3px;
+        background: $third-color;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+      }
+      &:focus {
+        outline: 0;
+        ~ label {
+          @extend %label-movement;
+        }
+        ~ span {
+          width: 100%;
+          transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+        }
+      }
+      &:valid ~ label {
+        @extend %label-movement;
+      }
+    }
+    
+    textarea {
+      width: 100%;
+      margin-right: 4%;
+      min-height: 150px;
+    }
+  }
+}
+
+// mobile-menu 
+@media screen and (max-width: 768px){
+  
+  #div2 {
+    flex-direction: column;
+  }
+  #mobile-menu {
+    background-color: $fourth-color;
+    border-radius: 20px;
+    text-align: left;
+    margin: 0;
+    color: $third-color;
+    padding: 15px 15px 15px 15px;
+    ul {
+      flex-direction: column;
+      background-color: $fourth-color;
+    }
+  }
+  .header-wrapper a {
+    margin-top: 150px;
+  }
+  #div3 {
+    background-position-y: 1px;
+    background-position-x: -10px;
+    overflow: hidden;
+    height: 1300px;
+    padding: 0 5% 0 5%;
+    .div3-inner {
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      margin: 0;
+      .div3-card, .div3-card2 {
+        justify-content: center;
+        width: 400px;
+        height: 200px;
+        margin: 10px 5vh 0 5vh;
+        padding: 10px;
+      }
+    }
+  }
+  #div4 {
+    height: 1400px;
+    .offer-wrapper{
+      padding-top: 40px;
+      flex-direction: column;
+      flex-wrap: wrap;
+      row-gap: 80px;
+      .offer-card {
+        width: 400px;
+        height: auto;
+        padding-bottom: 20px;
+        .header {
+          margin: 0 auto;
+        }
+        .card-info {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  .div5-txt {
+
+    p {
+      width: 200px !important;
+    }
+  }
+}
+  /*Magic card*/
+#div4 {
+  
+.offer-card {
+  width: 190px;
+  height: 400px;
+  background: #f5f5f5;
+  overflow: visible;
+  box-shadow: 0 5px 20px 2px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 0 1rem;
+    ul {
+      list-style-type: none;
+    }
+   }
+   .card-img {
+    display: flex;
+    text-align: center;
+    text-align: end;
+    justify-content: center;
+    --size: 100px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    background: #42caff;
+    background: linear-gradient(to bottom, $first-color 0%, $second-color 100%);
+    position: relative;
+    transition: all .3s ease-in-out;
+    img {
+      align-self: center;
+      width: 70px;
+      height: 70px;
+    }
+   }
+  }
+  //hover 
+  .offer-card:hover .card-img{
+    --size: 120px;
+    width: var(--size);
+    height: var(--size);
+   }
  }
