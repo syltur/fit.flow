@@ -2,10 +2,24 @@ body, html{
   margin: 0;
   padding: 0;
 }
-// FIRST DIV, NAVBARS, LOGO, MENU
+//video!
+//#background-video { position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%); min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: -100; background-size: cover; }
+#quote {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb($first-color, 0.95);
+  .quote-inner img{
+    width: 20px;
+    height: 20px;
+  }
+
+}
 .nav-wrapper {
   width: fit-content;
-  background-image: url(/images/background.svg);
+  background-image: url(/images/bg1.svg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -38,13 +52,21 @@ body, html{
 }
 //o mnie
 #div2 {
-  overflow: hidden;
+  background-image: url(/images/bg3.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -100px;
+  min-height: 100vh;
   display: flex;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  overflow: hidden;
   flex-direction: row;
   min-height: 80%;
   justify-items: space-evenly;
   align-items: center;
-  padding: 10% 10% 10% 10%;
+  position: relative;
+  padding: 5% 10% 10% 10%;
   .div2-text {
     padding-left: 5%;
     flex-basis: 50%;
@@ -60,70 +82,13 @@ body, html{
     flex-basis: 50%;
     img {
       min-height: 300px;
+      max-height: 600px;
+      max-width: 600px;
       padding-right: 5%;
     }
   }
 }
-#div3 {
-  background-image: url(/images/bg3.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: -220px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  .div3-inner {
-    width: 680px;
-    padding-top: 4%;
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 20px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    .div3-card {
-      flex-grow: 1;
-      display: flex;
-      align-items: center;
-      margin-right: 20px;
-      width: 200px;
-      height: 200px;
-      background: white;
-      border-radius: 10px;
-      transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
-    }
-    .div3-card2 {
-      flex-grow: 3;
-      display: flex;
-      margin-top: 5px;
-      align-items: center;
-      margin-right: 20px;
-      width: 680px;
-      height: 150px;
-      background: white;
-      border-radius: 10px;
-      transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
-    }
-    .shadow {
-      box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
-                  0 0  0 2px rgb(190, 190, 190),
-                  0.3em 0.3em 1em rgba(0,0,0,0.3);
-     }
-      p {
-        padding: 5px;
-        text-align: center;
-        font-size: 20px;
-        font-family: 'oswald';
-        color: $fourth-color;
-      }
-  }
-}
-#div4 {
+#offer {
   margin-top: 0;
   padding-top: 0;
   background-color: $second-color;
@@ -143,7 +108,7 @@ body, html{
     }
   }
 }
-#div5 {
+#wspolpraca {
   width: 100%;
   background-position-y: -1px;
   background-image: url(/images/background4.svg);
@@ -153,19 +118,22 @@ body, html{
   position: relative;
   .cooperation-inner {
     display: flex;
-    justify-content: center;
-    column-gap: 20vh;
-    .text-coo {
-      flex-grow: 5;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 10%;
+    .c-t {
+      width: 450px;
+      text-align: center;
     }
-    .num {
-      flex-grow: 1;
+    .c-h {
+      width: 200px;
     }
-    img {
-      flex-grow: 5;
+    .c-i {
+      width: 450px;
+      text-align: center;
     }
   }
-  .div5-txt {
+  .wspolpraca-txt {
 
     p {
       text-align: center;
@@ -230,15 +198,20 @@ body, html{
     justify-content: center;
     padding: 0 !important;
   }
-#div6 {
-  background-image: url(../images/bg-reviews.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100%;
+.reviews {
+  background-color: rgb($first-color, 0.7);
+  height: 600px;
   width: 100%;
   padding: 0;
   margin: 0;
+  position: relative;
+  video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -5;
+  }
   /* Slider */
   .carousel-inner, .carousel-item {
     margin-top: 3%;
@@ -257,31 +230,32 @@ body, html{
     justify-self: center;
     padding: 20px;
     column-gap: 15%;
+   .review-p {
+
     p {
+      display: block;
       color: $third-color;
       flex-grow: 1;
-      text-align: left;
+      text-align: center;
       font-style: italic;
-      letter-spacing: 1px;
       font-size: 20px;
+      padding: 5% 5% 0% 5%;
+   }
     }
     img {
       flex-grow: 1;
     }
   }
-  .review-quote {
-    padding: 5%;
-    .quote1 {
-      padding: 10px;
-      float: left;
-    }
-    .quote2 {
-
-      float: right;
-    }
-  }
+.quote1 {
+  float: left;
+  width: 40px;
 }
-#div7 {
+.quote2 {
+  float: right;
+  width: 40px;
+ }
+}
+#cennik {
   height: 100%;
   width: 100%;
   padding: 5% 0 5% 0;
@@ -315,7 +289,6 @@ body, html{
         transition: all .25s;
       }
     }
-  
     .price-box2 {
       padding: 2%;
       flex-basis: 41.35%;
@@ -357,7 +330,7 @@ body, html{
     }
   }
 }
-#div8 {
+#o-mnie {
   height: 100%;
   width: 100%;
   padding: 5% 0 5% 0;
@@ -391,7 +364,7 @@ body, html{
     }
   }
 }
-#div9 {
+#kontakt {
   height: 100%;
   width: 100%;
   padding: 5% 0 5% 0;
@@ -415,22 +388,18 @@ body, html{
       max-width: 75rem;
       margin: 0 auto;
     }
-    
     h1 {
       color: $third-color;
       font-size: 1.5rem;
       letter-spacing: -1px;
       margin: 1.25rem 0;
     }
-    
-    
     %label-movement {
       font-size: 0.75em;
       color: $third-color;
       top: -2.25rem;
       transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
     }
-    
     .styled-input {
       float: left;
       width: 30%;
@@ -441,7 +410,7 @@ body, html{
         color: $first-color;
         padding: 1rem;
         position: absolute;
-        top: 0;    
+        top: 0;
         left: 0;
         transition: all 0.25s cubic-bezier(0.2, 0, 0.03, 1);
         pointer-events: none;
@@ -450,10 +419,9 @@ body, html{
         width: 96%;
       }
     }
-    
     input, textarea {
       padding: 1rem 1rem;
-      border: 0; 
+      border: 0;
       width: 100%;
       font-size: 1rem;
       ~ span {
@@ -480,7 +448,6 @@ body, html{
         @extend %label-movement;
       }
     }
-    
     textarea {
       width: 100%;
       margin-right: 4%;
@@ -490,6 +457,7 @@ body, html{
 }
 
 // mobile-menu 
+
 @media screen and (max-width: 768px){
   
   #div2 {
@@ -530,7 +498,7 @@ body, html{
       }
     }
   }
-  #div4 {
+  #offer {
     height: 1400px;
     .offer-wrapper{
       padding-top: 40px;
@@ -539,7 +507,7 @@ body, html{
       row-gap: 80px;
       .offer-card {
         width: 400px;
-        height: auto;
+        height: 600px;
         padding-bottom: 20px;
         .header {
           margin: 0 auto;
@@ -550,7 +518,7 @@ body, html{
       }
     }
   }
-  .div5-txt {
+  .wspolpraca-txt {
 
     p {
       width: 200px !important;
@@ -558,7 +526,7 @@ body, html{
   }
 }
   /*Magic card*/
-#div4 {
+#offer {
   
 .offer-card {
   width: 190px;

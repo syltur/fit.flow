@@ -18,6 +18,19 @@ h2 {
     color: $second-color;
   }
 }
+.quote0 {
+  color: $third-color;
+  font-style: italic;
+  font-family: 'Roboto Slab', serif;
+  font-size: 30px;
+}
+.quote-author {
+  color: $third-color;
+  font-family: 'Roboto Slab', serif;
+  font-style: italic;
+  font-size: 18px;
+  text-align: end;
+}
 .header-2 {
   margin: 0 15% 0 15%;
   font-size: 55px !important;
@@ -63,7 +76,7 @@ p {
   font-weight: bold;
 }
 .nav-link p{
-  color: rgba(247, 241, 241, 0.435);
+  color: $second-color;
   text-transform: uppercase;
   font-size: 17px;
   font-weight: bold;
@@ -86,8 +99,15 @@ p {
     }
   }
 }
-.rewiev-p {
+.review-p {
+  padding: 0 auto;
+  margin: 0 auto;
+  width: 600px;
   font-weight: 300;
+}
+.client {
+  float: right;
+  color: $third-color;
 }
 .review-goal {
   font-style: normal;
