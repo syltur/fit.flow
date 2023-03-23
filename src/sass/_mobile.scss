@@ -1,0 +1,269 @@
+// mobile-menu 
+
+@media screen and (max-width: 768px){
+  #div2 {
+    background-position-y: 100px;
+    background-position-x: -50px;
+    flex-direction: column;
+    .div2-img {
+      order: 1;
+      img {
+        margin: 0 auto;
+        width: 120%;
+      }
+    }
+    .div2-text {
+      order: 2;
+    }
+  }
+  .btn, .btn-wrapper {
+    width: 100% !important;
+  }
+  #mobile-menu {
+    background-color: $fourth-color;
+    border-radius: 20px;
+    text-align: left;
+    margin: 0;
+    color: $third-color;
+    padding: 15px 15px 15px 15px;
+    ul {
+      flex-direction: column;
+      background-color: $fourth-color;
+    }
+  }
+  .header-wrapper a {
+    margin-top: 150px;
+  }
+  #div3 {
+    background-position-y: 1px;
+    background-position-x: -10px;
+    overflow: hidden;
+    height: 1300px;
+    padding: 0 5% 0 5%;
+    .div3-inner {
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      margin: 0;
+      .div3-card, .div3-card2 {
+        justify-content: center;
+        width: 400px;
+        height: 200px;
+        margin: 10px 5vh 0 5vh;
+        padding: 10px;
+      }
+    }
+  }
+  #offer {
+    height: 1450px;
+    .offer-wrapper {
+      padding-top: 40px;
+      flex-direction: column;
+      flex-wrap: wrap;
+      row-gap: 80px;
+      .offer-card {
+        width: 100%;
+        height: 600px;
+        .header {
+          margin: 0 auto;
+        }
+        .card-info {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  #wspolpraca {
+    background-position-y: -10px;
+    width: 100%;
+  .cooperation-inner {
+    column-gap: 5%;
+    .c-t, .c-i {
+      width: 90px;
+    }
+    .c-h {
+      width: 150px;
+    }
+    .text-coo {
+      font-size: 15px;
+      text-transform: uppercase;
+    }
+    .c-i  img{
+      width: 100px;
+      height: 80px;
+    }
+  }
+  .wspolpraca-txt {
+
+    p {
+      text-align: left !important;
+      width: 500px !important;
+    }
+  }
+}
+.reviews {
+  height: 500px;
+  #background-reviews {
+    object-fit: fill;
+  }
+  .header-2 {
+    font-size: 35px !important;
+  }
+  .review-p p {
+    font-size: 15px !important;
+  }
+}
+#cennik {
+  height: 860px;
+  .price-wrapper {
+    .price-box1 {
+      height: 150px;
+      flex-basis: 41.35%;
+    }
+   .price-box3-1, .price-box3-2 {
+    height: 200px;
+    padding: 2% 2% 2% 2%;
+   }
+   .price-box3-1 p, .price-box3-2 p{
+    font-size: 15px;
+    padding: 0 5% 5% 5%;
+   }
+  }
+}
+  #o-mnie {
+    padding: 50px 20px 100px 20px;
+    height: 800px;
+    width: 100%;
+    h4 {
+      padding-top: 0;
+      margin-top: 0;
+    }
+    .about-me {
+      margin-top: 50%;
+      padding: 5% 5% 5% 5%;
+      row-gap: 5%;
+      flex-direction: column;
+      
+      .sandra-img {
+        margin-bottom: 0;
+        padding: 5% 5% 0% 5%;
+        a {
+          margin-top: 0;
+          padding: 0% 5% 5% 15%;
+        }
+        img {
+          scale:calc(0.95);
+        }
+      }
+    }
+  }
+  #metamorfozy {
+    padding-left: 0 !important;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    h4 {
+      padding-top: 400px;
+    }
+    
+    .flip-card-wrapper {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 20px;
+      .flip-card {
+        width: 80%;
+        height: 400px;
+      }
+    }
+  }
+  #kontakt {
+    background-image: none;
+    .contact {
+      width: 100%;
+      border-radius: 0;
+      input {
+        margin-top: 15%;
+        margin-bottom: 15%;
+        height: 100px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  
+  .menu-effect a:before,
+  .menu-effect a:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .menu-effect a:before {
+    bottom: 0;
+    display: block;
+    height: 3px;
+    width: 0%;
+    content: "";
+    background-color: $second-color;
+  }
+  .menu-effect a:after {
+    left: 0;
+    top: 0;
+    padding: 0.5em 0;
+    position: absolute;
+    content: attr(data-hover);
+    white-space: nowrap;
+    max-width: 0%;
+    overflow: hidden;
+  }
+  .menu-effect a:hover:before,
+  .menu-effect .current a:before {
+    opacity: 1;
+    width: 100%;
+  }
+  .menu-effect a:hover:after,
+  .menu-effect .current a:after {
+  max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .main-header {
+  font-size: 40px;
+  width: 60%;
+  }
+  .menu-effect a:before,
+  .menu-effect a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  }
+  .menu-effect a:before {
+  bottom: 0;
+  display: block;
+  height: 3px;
+  width: 0%;
+  content: "";
+  background-color: $second-color;
+  }
+  .menu-effect a:after {
+  left: 0;
+  top: 0;
+  padding: 0.5em 0;
+  position: absolute;
+  content: attr(data-hover);
+  white-space: nowrap;
+  max-width: 0%;
+  overflow: hidden;
+  }
+  .menu-effect a:hover:before,
+  .menu-effect .current a:before {
+  opacity: 1;
+  width: 100%;
+  }
+  .menu-effect a:hover:after,
+  .menu-effect .current a:after {
+  max-width: 100%;
+  }
+}

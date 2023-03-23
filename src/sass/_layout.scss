@@ -1,11 +1,6 @@
-body, html{
-  margin: 0;
-  padding: 0;
-}
-//video!
-//#background-video { position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%); min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: -100; background-size: cover; }
 #quote {
-  height: 200px;
+  padding: 20px;
+  height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -18,13 +13,13 @@ body, html{
 
 }
 .nav-wrapper {
-  width: fit-content;
+  width: 100%;
   background-image: url(/images/bg1.svg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
   nav {
-    padding: 10px;
+    width: 100%;
     height: 10vh;
     display: flex;
     align-items: center;
@@ -33,7 +28,7 @@ body, html{
       list-style-type: none;
       display: inline-block;
     }
-  }  
+  }
   .header-wrapper {
     padding: 20vh 0 20vh 0;
     margin-top: 5vh;
@@ -55,16 +50,11 @@ body, html{
   background-image: url(/images/bg3.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: -100px;
-  min-height: 100vh;
+  background-position-y: -130px;
   display: flex;
   margin-bottom: 0;
-  padding-bottom: 0;
   overflow: hidden;
-  flex-direction: row;
   min-height: 80%;
-  justify-items: space-evenly;
-  align-items: center;
   position: relative;
   padding: 5% 10% 10% 10%;
   .div2-text {
@@ -109,6 +99,7 @@ body, html{
   }
 }
 #wspolpraca {
+  padding-top: 40px;
   width: 100%;
   background-position-y: -1px;
   background-image: url(/images/background4.svg);
@@ -118,7 +109,6 @@ body, html{
   position: relative;
   .cooperation-inner {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     column-gap: 10%;
     .c-t {
@@ -134,16 +124,12 @@ body, html{
     }
   }
   .wspolpraca-txt {
-
     p {
+      text-transform: uppercase;
       text-align: center;
       width: 920px;
       line-height: 4px;
-      span {
-        text-align: left;
-        letter-spacing: 2px;
-        font-size: 15px;
-      }
+      text-decoration: 2px dotted;
     }
   }
 }
@@ -315,14 +301,13 @@ body, html{
       height: 220px;
       background-color: $first-color;
       color: $third-color;
-      height: 130px;
       text-align: center;
       text-transform: uppercase;
     }
     .price-box3-2 {
       padding: 2%;
       flex-basis: 41.35%;
-      height: 130px;
+      height: 220px;
       background-color: $second-color;
       color: $third-color;
       text-align: center;
@@ -364,13 +349,26 @@ body, html{
     }
   }
 }
+#metamorfozy {
+  height: 750px;
+  width: 100%;
+  .card2-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 #kontakt {
   height: 100%;
   width: 100%;
   padding: 5% 0 5% 0;
   background-image: url(../images/bg9.svg);
   .contact {
-    height: 500px;
+    height: 600px;
     width: 60%;
     background-color: $second-color;
     margin: 0 auto;
@@ -455,123 +453,3 @@ body, html{
     }
   }
 }
-
-// mobile-menu 
-
-@media screen and (max-width: 768px){
-  
-  #div2 {
-    flex-direction: column;
-  }
-  #mobile-menu {
-    background-color: $fourth-color;
-    border-radius: 20px;
-    text-align: left;
-    margin: 0;
-    color: $third-color;
-    padding: 15px 15px 15px 15px;
-    ul {
-      flex-direction: column;
-      background-color: $fourth-color;
-    }
-  }
-  .header-wrapper a {
-    margin-top: 150px;
-  }
-  #div3 {
-    background-position-y: 1px;
-    background-position-x: -10px;
-    overflow: hidden;
-    height: 1300px;
-    padding: 0 5% 0 5%;
-    .div3-inner {
-      flex-direction: column;
-      justify-content: center;
-      align-content: center;
-      margin: 0;
-      .div3-card, .div3-card2 {
-        justify-content: center;
-        width: 400px;
-        height: 200px;
-        margin: 10px 5vh 0 5vh;
-        padding: 10px;
-      }
-    }
-  }
-  #offer {
-    height: 1400px;
-    .offer-wrapper{
-      padding-top: 40px;
-      flex-direction: column;
-      flex-wrap: wrap;
-      row-gap: 80px;
-      .offer-card {
-        width: 400px;
-        height: 600px;
-        padding-bottom: 20px;
-        .header {
-          margin: 0 auto;
-        }
-        .card-info {
-          margin-top: 10px;
-        }
-      }
-    }
-  }
-  .wspolpraca-txt {
-
-    p {
-      width: 200px !important;
-    }
-  }
-}
-  /*Magic card*/
-#offer {
-  
-.offer-card {
-  width: 190px;
-  height: 400px;
-  background: #f5f5f5;
-  overflow: visible;
-  box-shadow: 0 5px 20px 2px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  .card-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2em;
-    padding: 0 1rem;
-    ul {
-      list-style-type: none;
-    }
-   }
-   .card-img {
-    display: flex;
-    text-align: center;
-    text-align: end;
-    justify-content: center;
-    --size: 100px;
-    width: var(--size);
-    height: var(--size);
-    border-radius: 50%;
-    transform: translateY(-50%);
-    background: #42caff;
-    background: linear-gradient(to bottom, $first-color 0%, $second-color 100%);
-    position: relative;
-    transition: all .3s ease-in-out;
-    img {
-      align-self: center;
-      width: 70px;
-      height: 70px;
-    }
-   }
-  }
-  //hover 
-  .offer-card:hover .card-img{
-    --size: 120px;
-    width: var(--size);
-    height: var(--size);
-   }
- }

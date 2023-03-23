@@ -1,4 +1,3 @@
-
 h1 {
   color: $third-color;
   text-align: center;
@@ -76,7 +75,7 @@ p {
   font-weight: bold;
 }
 .nav-link p{
-  color: $second-color;
+  color: $third-color;
   text-transform: uppercase;
   font-size: 17px;
   font-weight: bold;
@@ -148,82 +147,4 @@ p {
     font-size: 40px;
     margin: 0;
   }
-}
-//menu-effect rest code
-@media screen and (min-width: 768px) {
-  
-  .menu-effect a:before,
-  .menu-effect a:after {
-    position: absolute;
-    -webkit-transition: all 0.35s ease;
-    transition: all 0.35s ease;
-  }
-  .menu-effect a:before {
-    bottom: 0;
-    display: block;
-    height: 3px;
-    width: 0%;
-    content: "";
-    background-color: $second-color;
-  }
-  .menu-effect a:after {
-    left: 0;
-    top: 0;
-    padding: 0.5em 0;
-    position: absolute;
-    content: attr(data-hover);
-    white-space: nowrap;
-    max-width: 0%;
-    overflow: hidden;
-  }
-  .menu-effect a:hover:before,
-  .menu-effect .current a:before {
-    opacity: 1;
-    width: 100%;
-  }
-  .menu-effect a:hover:after,
-  .menu-effect .current a:after {
-  max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-
-.main-header {
-font-size: 40px;
-width: 60%;
-}
-.menu-effect a:before,
-.menu-effect a:after {
-position: absolute;
--webkit-transition: all 0.35s ease;
-transition: all 0.35s ease;
-}
-.menu-effect a:before {
-bottom: 0;
-display: block;
-height: 3px;
-width: 0%;
-content: "";
-background-color: $second-color;
-}
-.menu-effect a:after {
-left: 0;
-top: 0;
-padding: 0.5em 0;
-position: absolute;
-content: attr(data-hover);
-white-space: nowrap;
-max-width: 0%;
-overflow: hidden;
-}
-.menu-effect a:hover:before,
-.menu-effect .current a:before {
-opacity: 1;
-width: 100%;
-}
-.menu-effect a:hover:after,
-.menu-effect .current a:after {
-max-width: 100%;
-}
 }
