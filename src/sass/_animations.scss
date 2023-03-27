@@ -51,7 +51,7 @@ $delayStep: .115s;
 }
 .btn {
   clear: both;
-  width: 65vh;
+  width: 460px;
   border: 2px solid $first-color !important;
 	background: hsl(var(--hue), 98%, 80%);
 	border-radius: 7px;
@@ -128,8 +128,7 @@ $delayStep: .115s;
  #offer {
   
   .offer-card {
-    width: 190px;
-    height: 400px;
+    padding: 10px 10px 10px 10px;
     background: #f5f5f5;
     overflow: visible;
     box-shadow: 0 5px 20px 2px rgba(0,0,0,0.1);
@@ -140,8 +139,6 @@ $delayStep: .115s;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 2em;
-      padding: 0 1rem;
       ul {
         list-style-type: none;
       }
@@ -149,11 +146,10 @@ $delayStep: .115s;
      .card-img {
       display: flex;
       text-align: center;
-      text-align: end;
       justify-content: center;
       --size: 100px;
       width: var(--size);
-      height: var(--size);
+      height: var(--size) !important;
       border-radius: 50%;
       transform: translateY(-50%);
       background: #42caff;
@@ -174,30 +170,28 @@ $delayStep: .115s;
       height: var(--size);
      }
    }
-
    //second card
    .card2 img {
     width: 400px;
     height: 500px;
-    object-fit:cover;
+    object-fit: cover;
     
-    -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
+    -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
     
-    transform-origin:center;
+    transform-origin: center;
   }
   .card2-wrapper img {
-    opacity:0.3;
+    opacity: 0.3;
   }
   .card2-wrapper img:hover {
-    transform:perspective(800px)       rotateY(0deg);
-    opacity:1;
+    transform: perspective(800px) rotateY(0deg);
+    opacity: 1;
   }
   body {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     position: relative;
   }
-  
   //flip cart
   .flip-card-wrapper {
     padding-top: 5%;
@@ -213,7 +207,6 @@ $delayStep: .115s;
     height: 500px;
     perspective: 1000px;
   }
-  
   .card-title {
     font-size: 1.5em;
     font-weight: 900;
@@ -221,7 +214,6 @@ $delayStep: .115s;
     color: $third-color !important;
     margin: 0;
   }
-  
   .flip-card-inner {
     position: relative;
     width: 100%;
@@ -230,11 +222,9 @@ $delayStep: .115s;
     transition: transform 0.8s;
     transform-style: preserve-3d;
   }
-  
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
-  
   .flip-card-front, .flip-card-back {
     box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
     position: absolute;
@@ -248,41 +238,45 @@ $delayStep: .115s;
     border: 5px solid $first-color;
     border-radius: 1rem;
   }
-  
   .flip-card-front {
     background: $first-color;
     color: $third-color;
   }
-  
   .flip-card-back {
-    background: $third-color;
+    background: $first-color;
     transform: rotateY(180deg);
   }
-  //button contact 
-
-  .styled-input button {
-    padding: 5px 5px 5px 5px;
-    display: block;
-    margin: 0 auto;
-    width: fit-content;
-    min-width: 100px;
-    height: 45px;
-    padding: 8px;
-    border-radius: 5px;
-    border: 2.5px solid #E0E1E4;
-    box-shadow: 0px 0px 20px -20px;
-    cursor: pointer;
-    background-color: white;
-    transition: all 0.2s ease-in-out 0ms;
-    user-select: none;
-    font-family: 'Oswald';
-    text-transform: lowercase;
-    font-size: 20px;
-    &:hover {
-      background-color: #F2F2F2;
-      box-shadow: 0px 0px 20px -18px;
-    }
-    &:active {
-      transform: scale(0.95);
-    }
+ 
+//certificat popout
+//btn send
+.btn-contact-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.btn-send {
+  cursor: pointer;
+  font-weight: 700;
+  font-family: Helvetica,"sans-serif";
+  transition: all .2s;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background: $third-color;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  :hover {
+    background: $third-color;
   }
+}
+.btn-send > svg {
+  width: 34px;
+  margin-left: 10px;
+  transition: transform .3s ease-in-out;
+}
+.btn-send:hover svg {
+  transform: translateX(5px);
+}
+.btn-send:active {
+  transform: scale(0.95);
+}

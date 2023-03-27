@@ -1,6 +1,6 @@
 // mobile-menu 
-
 @media screen and (max-width: 768px){
+
   #div2 {
     background-position-y: 100px;
     background-position-x: -50px;
@@ -9,7 +9,7 @@
       order: 1;
       img {
         margin: 0 auto;
-        width: 120%;
+        width: 100%;
       }
     }
     .div2-text {
@@ -35,6 +35,7 @@
     margin-top: 150px;
   }
   #div3 {
+    width: 100%;
     background-position-y: 1px;
     background-position-x: -10px;
     overflow: hidden;
@@ -55,15 +56,15 @@
     }
   }
   #offer {
-    height: 1450px;
+    width: 100%;
+    height: 1550px;
     .offer-wrapper {
       padding-top: 40px;
       flex-direction: column;
       flex-wrap: wrap;
       row-gap: 80px;
       .offer-card {
-        width: 100%;
-        height: 600px;
+        width: 90%;
         .header {
           margin: 0 auto;
         }
@@ -74,30 +75,71 @@
     }
   }
   #wspolpraca {
+    height: 1900px;
     background-position-y: -10px;
     width: 100%;
   .cooperation-inner {
-    column-gap: 5%;
+    align-content: center;
+    column-gap: 50px;
     .c-t, .c-i {
-      width: 90px;
+      width: 75px;
+      font-size: 50px !important;
+      align-self: center;
     }
     .c-h {
-      width: 150px;
+      width: 50px;
     }
     .text-coo {
-      font-size: 15px;
+      padding-top: 30px;
+      text-align: center;
+      font-size: 10px;
       text-transform: uppercase;
     }
     .c-i  img{
-      width: 100px;
-      height: 80px;
+      width: 65px;
+      height: 65px;
     }
   }
   .wspolpraca-txt {
 
     p {
+      font-size: 15px !important;
       text-align: left !important;
       width: 500px !important;
+    }
+  }
+  .vertical {
+    border-left: 6px solid $first-color;
+    top: 200px;
+    height: 1600px;
+    position: absolute;
+    left: 50%;
+    .circle {
+      width: 80px;
+      height: 80px;
+    }
+    .c-1 {
+      top: 200px;
+      left: -45px;
+    }
+    .c-2 {
+      top: 500px;
+      left: -45px;
+    }
+    .c-3 {
+      top: 800px;
+      left: -45px;
+    }
+    .c-4 {
+      top: 1100px;
+      left: -45px;
+    }
+    .c-5 {
+      top: 1400px;
+      left: -45px;
+    }
+    .cs-2 {
+      top: 1600px;
     }
   }
 }
@@ -107,65 +149,72 @@
     object-fit: fill;
   }
   .header-2 {
-    font-size: 35px !important;
+    font-size: 30px !important;
   }
   .review-p p {
     font-size: 15px !important;
+    margin-bottom: 0;
   }
 }
 #cennik {
-  height: 860px;
+  height: 1300px;
+  width: 100%;
+  margin-bottom: 100px;
   .price-wrapper {
+    padding: 10px 10px 10px 10px;
     .price-box1 {
-      height: 150px;
-      flex-basis: 41.35%;
+      flex-grow: 1;
+      .price-text {
+        font-size: 18px !important;
+      }
     }
-   .price-box3-1, .price-box3-2 {
-    height: 200px;
-    padding: 2% 2% 2% 2%;
-   }
-   .price-box3-1 p, .price-box3-2 p{
-    font-size: 15px;
-    padding: 0 5% 5% 5%;
-   }
+    .price-box2 {
+      flex-basis: 100%;
+      height: 150px;
+    }
+    .price-box3-1 {
+      flex-basis: 100%;
+      height: 130px;
+    }
   }
 }
   #o-mnie {
-    padding: 50px 20px 100px 20px;
-    height: 800px;
+    height: 850px;
     width: 100%;
     h4 {
       padding-top: 0;
       margin-top: 0;
     }
     .about-me {
-      margin-top: 50%;
+      margin-top: 15%;
       padding: 5% 5% 5% 5%;
       row-gap: 5%;
       flex-direction: column;
-      
+      .ab-me {
+        font-size: 15px;
+      }
+      .sandra-img.aos-init.aos-animate {
+        height: 450px;
+      }
       .sandra-img {
+        padding-top: 50px;
         margin-bottom: 0;
-        padding: 5% 5% 0% 5%;
         a {
-          margin-top: 0;
-          padding: 0% 5% 5% 15%;
+          display: none;
         }
         img {
-          scale:calc(0.95);
+          scale: calc(0.6);
         }
       }
     }
   }
   #metamorfozy {
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 0 !important;
     height: 100%;
     width: 100%;
     position: relative;
-    h4 {
-      padding-top: 400px;
-    }
-    
     .flip-card-wrapper {
       flex-direction: column;
       justify-content: center;
@@ -178,7 +227,9 @@
     }
   }
   #kontakt {
+    width: 100%;
     background-image: none;
+    margin-bottom: 0;
     .contact {
       width: 100%;
       border-radius: 0;
@@ -188,6 +239,10 @@
         height: 100px;
       }
     }
+  }
+  footer {
+    margin-top: 0;
+    height: 100px;
   }
 }
 @media screen and (min-width: 768px) {

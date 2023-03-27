@@ -1,15 +1,26 @@
-document.addEventListener('DOMContentLoaded', function(){
-  var menuLinks = document.querySelectorAll('#mobile-menu a');
-  menuLinks.forEach(function(link){
-    link.addEventListener('click', function(e){
-      e.preventDefault();
-      var targetId = link.getAttribute('href');
-      var targetElement = document.querySelector(targetId);
-      var targetPosition = targetElement.offsetTop;
-      window.scrollTo({
-        top: targetPosition,
-        behavior: 'smooth'
-      });
-    });
+const button = document.querySelector('#button');
+button.addEventListener('click', showPopout);
+
+function showPopout() {
+  const popout = document.createElement('div');
+  popout.id = 'popout';
+  document.body.appendChild(popout);
+  
+  const gallery = document.createElement('div');
+  gallery.id = 'gallery';
+  popout.appendChild(gallery);
+  
+  const images = [
+    'sandra1.jpg',
+  ];
+  
+  images.forEach(image => {
+    const img = document.createElement('img');
+    img.src = image;
+    gallery.appendChild(img);
   });
-});
+  
+  popout.addEventListener('click', () => {
+    popout.remove();
+  });
+}
