@@ -17,6 +17,18 @@ h2 {
     color: $second-color;
   }
 }
+.logo {
+  height: 65px;
+}
+.btn__txt {
+  font-family: 'coiny';
+}
+.text-coo {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .quote0 {
   color: $third-color;
   font-style: italic;
@@ -64,7 +76,11 @@ p {
   padding-right: 25%;
 }
 .main-header {
-  font-size: 60px;
+  font-size: 50px;
+}
+.fire {
+  height: 35px;
+  padding-bottom: 5px;
 }
 .brand-name p{
   font-family: 'Titan One', cursive;
@@ -74,7 +90,7 @@ p {
   font-weight: bold;
 }
 .nav-link p{
-  color: $third-color;
+  color: $second-color;
   text-transform: uppercase;
   font-size: 17px;
   font-weight: bold;

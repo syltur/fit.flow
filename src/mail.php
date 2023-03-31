@@ -7,11 +7,12 @@ if(isset($_POST['submit'])){
 
   $to = "trenerka.sanderka@fit-flow.nl";
   $headers = "Od: ".$email;
+  $headers = "Content-Type: text/plain; charset=utf-8\r\n".$headers;
 
-  $txt = "Odstałaś maila z fit-flow.nl od".$name.".\n\n".$message;
+  $txt = "Odstałaś maila z fit-flow.nl od ".$name.".\n\n".$message;
 
   mail($to,$subject,$txt,$headers);
-  
-  echo "Wiadomość została wysłana";
+
+  echo $txt;
 }
 ?>

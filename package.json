@@ -46,6 +46,7 @@
         "stylelint-scss": "^3.5.4"
     },
     "dependencies": {
-        "aos": "^2.3.4"
+        "aos": "^2.3.4",
+        "pace-js": "^1.2.4"
     }
 }

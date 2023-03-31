@@ -1,22 +1,10 @@
-#quote {
-  padding: 20px;
-  height: 750px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb($first-color, 0.95);
-  .quote-inner img{
-    width: 20px;
-    height: 20px;
-  }
-
-}
 .nav-wrapper {
-  background-image: url(/images/bg1.svg);
+  background-image: url(/images/bg1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 750px;
+  background-position: center;
+  height: 110vh;
+}
   nav {
     width: 100%;
     height: 10%;
@@ -29,7 +17,7 @@
     }
   }
   .header-wrapper {
-    height: 450px;
+    height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,27 +29,25 @@
       margin-top: 40px;
     }
   }
-}
 //o mnie
 #div2 {
-  background-image: url(/images/bg3.svg);
+  background-position-y: -20px;
+  background-image: url(/images/bg3.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: -200px;
   display: flex;
   margin-bottom: 0;
   overflow: hidden;
   min-height: 100%;
   position: relative;
-  padding: 0% 5% 5% 5%;
+  padding: 5% 5% 5% 5%;
   align-items: center;
-  justify-items: center;
-  justify-content: space-around;
-  column-gap: 80px;
+  justify-content: space-between;
+  row-gap: 10%;
   margin-top: 0;
   .div2-text {
     flex-basis: 45%;
-    padding-left: 5%;
+    padding-left: 10%;
     h2 {
       font-size: 60px;
     }
@@ -71,12 +57,15 @@
     }
   }
   .div2-img {
+    padding-left: 0%;
     flex-basis: 45%;
+    scale: calc(1.1);
   }
 }
 #offer {
   margin-top: 0;
   padding-top: 0;
+  padding-bottom: 30px;
   background-color: $second-color;
   height: 100%;
   h3 {
@@ -86,11 +75,14 @@
     margin-top: 7%;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
     column-gap: 20px;
     .offer-card {
       flex-basis: 30%;
+      height: 360px;
+      .card-info ul{
+        text-align: left;
+      }
     }
   }
 }
@@ -182,7 +174,6 @@
     padding: 0 !important;
   }
 .reviews {
-  background-color: rgb($first-color, 0.7);
   height: 600px;
   width: 100%;
   padding: 0 !important;
@@ -259,7 +250,7 @@
       cursor: pointer;
       span {
         font-family: 'coiny';
-        font-size: 30px;
+        font-size: 28px;
       }
       img {
         padding-bottom: 10px;
@@ -362,7 +353,7 @@
     width: 60%;
     background-color: $second-color;
     margin: 0 auto;
-    padding: 5% 5% 2% 5%;
+    padding: 5% 5% 0% 5%;
     border-radius: 5%;
     h4 {
       color: $third-color;
@@ -412,25 +403,12 @@
       border: 0;
       width: 100%;
       font-size: 1rem;
-      ~ span {
-        display: block;
-        width: 0;
-        height: 3px;
-        background: $third-color;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
-      }
       &:focus {
         outline: 0;
         ~ label {
           @extend %label-movement;
         }
-        ~ span {
-          width: 100%;
-          transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
-        }
+       
       }
       &:valid ~ label {
         @extend %label-movement;
@@ -444,7 +422,7 @@
   }
 }
 footer {
-  height: 60px;
+  height: 40px;
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -452,21 +430,148 @@ footer {
   color: $third-color;
   background-color: $first-color;
   p {
-    font-size: 13px !important;
+    padding-left: 2%;
+    font-size: 15px !important;
     font-weight: 200 !important;
   }
+  .footer-details {
+    font-family: 'Oswald';
+    padding-right: 2%;
+    display: flex;
+    column-gap: 10px;
+    justify-content: space-around;
+    a {
+      color: $third-color;
+      text-decoration: none;
+      &:hover {
+        color: $second-color;
+      }
+    }
+  }
 }
-#popout {
+.nav-wrap-wrap {
+  padding: 0 0 0 0 !important;
+}
+.loader-container {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.8);
+  right: 0;
+  bottom: 0;
+  background-color: $third-color;
+  z-index: 9999;
 }
-#gallery {
+.loader {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.loader::before,
+.loader::after {
+  content: "";
+  position: absolute;
+  border-radius: inherit;
+}
+.loader::before {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(0deg, $first-color 0%, $second-color 100%);
+  animation: load012323 .5s infinite linear;
+}
+.loader::after {
+  width: 85%;
+  height: 85%;
+  background-color: #222;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@keyframes load012323 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+//google translator 
+
+#lng {
+  cursor: pointer;
+  height: 37px;
+  line-height: 37px;
+  margin: 0;
+  top: 18px;
+  margin: 0 10px 0 10px;
+  border-radius: 2px;
+  z-index: 999;
+  color: $second-color;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: 'Oswald';
+  color: $second-color;
+  text-align: right;
+  transition: all 200ms ease-in-out 0s;
+}
+
+#lng_open {
+  background-color: #FFF;
+  color: #999;
+  width: 400px;
+  box-shadow: 0 0 3px #666;
+  padding: 5px 20px 10px;
+  position: absolute;
+  right: 20px;
+  top: 55px;
+  z-index: 1000;
+  border-radius: 4px;
+  display: none;
+  a {
+    color: $second-color;
+    text-decoration: none;
+  }
+}
+
+#lng_open #select {
+  padding: 0 0 0 20px;
+  font-size: 15px;
+  height: 38px;
+  line-height: 38px;
+  border-bottom: 1px solid #E8E8E8;
+  color: #7D7D80;
+  cursor: pointer;
+}
+
+#lng_open .dropdown {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+#lng .dropdown, #lng_open .dropdown {
+  font-size: 17px;
+  margin-left: 7px;
+}
+
+#lng .icon, #lng_open .icon {
+  display: none;
+}
+
+#more, #popular {
+  padding: 10px 0 10px 20px;
+  font-size: .9em;
+  border-bottom: 1px solid #DEDEDE;
+}
+
+#lng_open li {
+  list-style-type: none;
+  float: left;
+  width: 33%;
+  padding: 2px 0;
+  text-decoration: none;
+  &:first-child {
+    display: none;
+  }
 }

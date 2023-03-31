@@ -1,27 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <title>Fit Flow</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Sandra Szafraniec-Noga jest profesjonalną trenerką osobistą. Oferuje indywidualne sesje treningowe i programy żywieniowe dopasowane do pojedynczych klientów." />
+    <meta name="keywords" content="trenerka osobista, trenerka personalna, trening, programy żywieniowe, sesje treningowe, trener personalny, Holandia, Helmond, Eindhoven, zdrowy styl życia, fitness, trening, ćwiczenia, dieta, odchudzanie, Sandra Szafraniec-Noga, trenerka Sanderka" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/58d1e11034.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="./js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" > </script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
+    <div class="loader-container">
+      <div class=" loader"></div>
+    </div>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-12 ">
+        <div class="col-md-12 nav-wrap-wrap">
           <div class="row">
             <div class="nav-wrapper">
-              <nav id="navbar" class="navbar navbar-expand-lg navbar-light'">
-                <a class="navbar-brand brand-name" href="#"><p>Fit Flow</p></a>
-                <button class="navbar-toggler me-2 navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">                  <span class="navbar-toggler-icon "></span>
+              <nav id="navbar" class="navbar w-100 bg-light navbar-expand-lg navbar-light">
+                <a class="navbar-brand brand-name" href="#">
+                  <img src="./images/fit-flow.png" class="logo" alt="fit.flow">
+                </a>
+                <button class="navbar-toggler me-2 navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon "></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="mobile-menu">
                   <ul class="navbar-nav mr-auto menu-effect">
@@ -43,26 +51,17 @@
                       <li class="nav-item">
                           <a class="nav-link" href="#kontakt"><p class=" hover-menu">kontakt</p></a>
                       </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="./english.html"><p class=" hover-menu">ENG</p></a>
+                      </li>
                   </ul>
-                </div>
               </nav>
               <div class="header-wrapper">
-                <h1 class="main-header text-responsive">Zadbaj o swoje zdrowie i zbuduj pewność siebie z Sandrą</h1>
-                <a href="#"><span>bezpłatna konsultacja</span></a>
+                <h1 class="main-header text-responsive">Zadbaj o swoje zdrowie i zbuduj pewność siebie</h1>
+                <a href="#kontakt"><span>Dołącz do team.flow</span></a>
               </div>
             </div>
           </div>
-          <!--<div class="row">
-            <div class="col-md-12 d-sm-flex w-md-100" id="quote">
-              <div class="quote-inner">
-                <p class="quote0">
-                  <img src="./images/icons/quote1.png" class="first-quote1" alt="quote">
-                  Jeśli chcesz osiągnąć swój pełny potencjał, musisz wyjść ze strefy komfortu.
-                  <img src="./images/icons/quote2.png" class="first-quote2" alt="quote"></p>
-                <p class="quote-author">~ Alexander Graham Bell</p>
-              </div>
-            </div>
-          </div>-->
           <div class="row">
             <div class="col-md-12" id="div2">
               <div class="div2-text">
@@ -70,15 +69,17 @@
                   <div class="hello-text-wrapper">
                     <h2 class="hello-text">Cześć! jestem Sandra</h2>
                   </div>
-                    <p>Jestem tu dla Ciebie, abyś osiągnęła swój cel. Jako trener personalny, pomogę Ci wybrać najlepszy plan treningowy, dopasowany do Twojego stylu życia i poziomu zaawansowania.</p>
+                    <p>Jestem tu dla Ciebie i pomogę Ci osiągnąć Twój cel. Jako trener personalny opracuję najlepszy plan treningowy, dopasowany do Twojego stylu życia i poziomu zaawansowania.</p>
                   <div class="btn-wrapper ">
-                    <button type="button" class="btn btn--blue">
-                      <span class="btn__txt">Zacznij odmieniać swoje nawyki już dziś!</span>
-                      <i class="btn__bg" aria-hidden="true"></i>
-                      <i class="btn__bg" aria-hidden="true"></i>
-                      <i class="btn__bg" aria-hidden="true"></i>
-                      <i class="btn__bg" aria-hidden="true"></i>
+                    <a href="#metamorfozy">
+                      <button type="button" class="btn btn--blue">
+                        <span class="btn__txt">BE THE BEAST!</span>
+                        <i class="btn__bg" aria-hidden="true"></i>
+                        <i class="btn__bg" aria-hidden="true"></i>
+                        <i class="btn__bg" aria-hidden="true"></i>
+                        <i class="btn__bg" aria-hidden="true"></i>
                       </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -100,12 +101,11 @@
                   <h4 class="header2">Plan treningowy</h4>
                   <div class="card-info">
                     <ul>
-                      <li><i class="fa-solid fa-chevron-right"></i> Plany zależne od celu</li>
-                      <li><i class="fa-solid fa-chevron-right"></i> Indywidualny plan</li>
-                      <li><i class="fa-solid fa-chevron-right"></i> Modelowanie sylwetki</li>
-                      <li><i class="fa-solid fa-chevron-right"></i> Trening dostosowany pod dostępny sprzęt</li>
-                      <li><i class="fa-solid fa-chevron-right"></i> Zwiększanie siły mięśniowej</li>
-                      <li><i class="fa-solid fa-chevron-right"></i> Budowa masy mięśniowej</li>
+                      <li><i class="fa-solid fa-chevron-right"></i> Lecimy osiągnąć Twój cel</li>
+                      <li><i class="fa-solid fa-chevron-right"></i> Kształtowanie sylwetki</li>
+                      <li><i class="fa-solid fa-chevron-right"></i> Akcja sprawność</li>
+                      <li><i class="fa-solid fa-chevron-right"></i> Akcja siła i dźwiganie</li>
+                      <li><i class="fa-solid fa-chevron-right"></i> Plan be.the.beast</li>
                     </ul>
                   </div>
                 </div>
@@ -113,15 +113,14 @@
                   <div class="card-img">
                     <img src="./images/icons/dieta.svg"  alt="dieta-icon">
                   </div>
-                  <h4 class="header2">Plan dietetyczny</h4>
+                  <h4 class="header2">Plan żywieniowy</h4>
                   <div class="card-info">
                     <ul>
-                      <li><i class="fa-solid fa-chevron-right"></i> Indywidualne podejście</li>
-                      <li><i class="fa-solid fa-chevron-right"></i> Urozmaicony jadłospis</li>
-                      <li><i class="fa-solid fa-chevron-right"></i> Redukcja tkanki tłuszczowej</li>
-                      <li><i class="fa-solid fa-chevron-right"></i> Budowanie masy mięśniowej</li>
-                      <li><i class="fa-solid fa-chevron-right"></i> Monitorowanie postępów</li>
-                      <li><i class="fa-solid fa-chevron-right"></i> Problemy z nadwagą / niedowagą</li>
+                      <li><i class="fa-solid fa-chevron-right"></i> Pyszne jedzonko</li>
+                      <li><i class="fa-solid fa-chevron-right"></i> Proste przepisy</li>
+                      <li><i class="fa-solid fa-chevron-right"></i> Projekt redukcja</li>
+                      <li><i class="fa-solid fa-chevron-right"></i> Projekt masa</li>
+                      <li><i class="fa-solid fa-chevron-right"></i> Projekt rekompozycja</li>
                     </ul>
                   </div>
                 </div>
@@ -132,10 +131,12 @@
                     <h4 class="header2">Mentoring</h4>
                     <div class="card-info">
                       <ul>
+                        <li><i class="fa-solid fa-chevron-right"></i> Planowanie działania</li>
                         <li><i class="fa-solid fa-chevron-right"></i> Kontrola postępów</li>
-                        <li><i class="fa-solid fa-chevron-right"></i> Nadzór podczas wykonywania ćwiczeń</li>
-                        <li><i class="fa-solid fa-chevron-right"></i> Holistyczne podejście</li>
-                        <li><i class="fa-solid fa-chevron-right"></i> Spalanie tkanki tłuszczowej</li>
+                        <li><i class="fa-solid fa-chevron-right"></i> Wsparcie</li>
+                        <li><i class="fa-solid fa-chevron-right"></i> Działanie</li>
+                        <li><i class="fa-solid fa-chevron-right"></i> Pocisk</li>
+                        <li><i class="fa-solid fa-chevron-right"></i> Rezultat</li>
                       </ul>
                   </div>
                 </div>
@@ -146,7 +147,7 @@
             <div class="col-md-12" id="wspolpraca">
               <div class="wspolpraca-txt">
                 <p><i>ZE MNĄ OSIĄGNIESZ SWÓJ CEL</i></p>
-                <h4 class="header">Sprawdź kroki współpracy</h4>
+                <h4 class="header">Jak działam ?</h4>
               </div>
               <div class= "vertical">
                 <div class="circle-small"></div>
@@ -161,7 +162,7 @@
                   <div class="cooperation-inner">
                     <div class="c-i"><img src="./images/cooperation-img/2.svg" alt="hands"></div>
                     <div class="c-h"><h4 class="header num n2">2</h4></div>
-                    <div class="c-t"><p class="text-coo">USTALAMY JAKI RODZAJ WSPÓŁPRACY CIĘ INTERESUJE</p></div>
+                    <div class="c-t"><p class="text-coo">Poznajemy się i USTALAMY JAKI RODZAJ WSPÓŁPRACY CIĘ INTERESUJE</p></div>
                   </div>
                 </div>
                 <div class="circle c-3" data-aos="fade-up" data-aos-duration="1000">
@@ -175,12 +176,12 @@
                   <div class="cooperation-inner">
                     <div class="c-i"><img src="./images/cooperation-img/4.svg" alt="hands"></div>
                     <div class="c-h"><h4 class="header num">4</h4></div>
-                    <div class="c-t"><p class="text-coo">PRZYGOTOWUJE PLAN TRENINGOWY, lub / i dietę</p></div>
+                    <div class="c-t"><p class="text-coo">Dołączasz do team.flow & przygotowuję plan</p></div>
                   </div>
                 </div>
                 <div class="circle c-5" data-aos="fade-up" data-aos-duration="1000">
                   <div class="cooperation-inner">
-                    <div class="c-t"><p class="text-coo">ZACZYNAMY WSPÓLNE TRENINGI, lub / i dietę</p></div>
+                    <div class="c-t"><p class="text-coo">działamy!<img alt="fire" class="fire" src="./images/icons/fire.png"/></p></div>
                     <div class="c-h"><h4 class="header num">5</h4></div>
                     <div class="c-i"><img src="./images/cooperation-img/5.svg" alt="form"></div>
                   </div>
@@ -191,7 +192,7 @@
           </div>
           <div class="row">
             <div class="col-md-12 reviews" id="review">
-              <video id="background-reviews" class="w-100" muted loop  src="/images/background.mp4" type="video/mp4"> </video>
+              <video id="background-reviews" class="w-100" muted loop autoplay src="/images/background.mp4" type="video/mp4"> </video>
               <div id="main-slider" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <h4 class="header-2">Opinie Moich Podopiecznych</h4>
@@ -285,7 +286,7 @@
           </div>
           <div class="row">
             <div class="col-md-120" id="metamorfozy">
-              <div data-aos="zoom-in-up" data-aos-duration="100"><h4 class="header">Poznaj Rodzinę Fit Flow!</h4></div>
+              <div data-aos="zoom-in-up" data-aos-duration="100"><h4 class="header">Poznaj Team Fit Flow!</h4></div>
               <div class="flip-card-wrapper">
                 <div class="flip-card">
                   <div class="flip-card-inner">
@@ -332,7 +333,8 @@
                   <a href="https://www.instagram.com/trenerka.sanderka/"><i class="fa-brands fa-instagram">trenerka.sanderka</i></a>
                 </div>
                 <div class="more-about-me" data-aos="fade-up" data-aos-duration="1000">
-                  <p class="ab-me">Z pasji do pomagania ludziom w osiąganiu ich celów fitness, jestem wykwalifikowanym trenerem personalnym. Pomagam w kształtowaniu ciała i prowadzeniu zdrowego stylu życia, specjalizując się w treningu siłowym i diecie oraz mentoringu. Dostosowuję programy treningowe i diety do indywidualnych potrzeb i oczekiwań każdego klienta.</p>
+                  <p class="ab-me">Z pasji do pomagania ludziom w osiąganiu ich celów fitness stworzyłam Fit.Flow.                     Filozofia flow zachęca do odkrywania w sobie pasji i wykorzystania swojego potencjału do realizacji celów. Wyzwala w człowieku pozytywne emocje, w tym poczucie spełnienia, szczęścia i bezpieczeństwa. 
+                    Wbijaj do miejsca, w którym możesz być kim chcesz, dostaniesz pełne wsparcie, spotkasz extra ludzi i będziesz wyglądać jak milion dolców. 🤩</p>
                   <hr>
                   <p class="q1">„Dziś zrób coś, czego innym się nie chce, a jutro będziesz miał to, czego inni pragną”</p>
                 </div>
@@ -380,13 +382,22 @@
           </div>
           <footer>
             <p>Trener personalny - Sandra Szafraniec-Noga</p>
-            <p>trenerka.sanderka@fit-flow.nl | 068 449 60 17 | www.fit-flow.nl | @trenerka.sanderka</p>
+            <div class="footer-details">
+              <a href="mailto:trenerka.sanderka@fit-flow.nl"><i class="fa-solid fa-paper-plane" style="color: #ffffff;"></i> trenerka.sanderka@fit-flow.nl</a>
+              <a href="tel:0684496017"><i class="fa-solid fa-phone" style="color: #ffffff;"></i> 068 449 60 17</a>
+              <a href="https://www.instagram.com/trenerka.sanderka/"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i> trenerka.sanderka</a>
+             </div>
           </footer>
         </div>
       </div>
     </div>
-    </div>
-    </div>
+  </div>
+</div>
+    <script>
+      window.addEventListener("load", function(){
+        document.querySelector(".loader-container").style.display = "none";
+      });
+      </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script>
       AOS.init();
